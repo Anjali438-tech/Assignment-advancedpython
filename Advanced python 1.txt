@@ -1,0 +1,175 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a3d86fed",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Q1. What is the purpose of Python's OOP?\n",
+    "\n",
+    "Ans: In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.\n",
+    "\n",
+    " Q2. Where does an inheritance search look for an attribute?\n",
+    "\n",
+    "Ans: Just like a parent-child relationship, inheritance works on derived classes relative to the base class. Every “Derived” class inherits from a “Base” class. For example, we have a Base class of “Animal,” and a “Lion” is a Derived class. The inheritance will be Lion is an Animal.  \n",
+    "\n",
+    " Q3. How do you distinguish between a class object and an instance object?\n",
+    "\n",
+    "Ans: Class objects and instances object are mostly same; but there is a very small difference. If Car is a class, 3 Cars are 3 different objects. All of these objects are instances. So these 3 cars are objects from instances of the Car class.\n",
+    "   \n",
+    "  Q4. What makes the first argument in a class’s method function special?\n",
+    "\n",
+    "Ans: self refers to the specific object instance created from a class.\n",
+    "    class MyClass :\n",
+    "    def func(self, name):\n",
+    "        self.name = name\n",
+    "  "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "cdd32bf6",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (Temp/ipykernel_22340/3983056195.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"C:\\Users\\91854\\AppData\\Local\\Temp/ipykernel_22340/3983056195.py\"\u001b[1;36m, line \u001b[1;32m2\u001b[0m\n\u001b[1;33m    Ans: The __init__ method lets the class initialize the object’s attributes and serves no other purpose. It is only used within classes.\u001b[0m\n\u001b[1;37m             ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "Q5. What is the purpose of the __init__ method?\n",
+    "Ans: The __init__ method lets the class initialize the object’s attributes and serves no other purpose. It is only used within classes. \n",
+    "class Dog:                   \n",
+    " \n",
+    "def __init__(self,dogBreed,dogEyeColor):\n",
+    "  \n",
+    "    self.breed = dogBreed       \n",
+    "    self.eyeColor = dogEyeColor...\n",
+    "\n",
+    "First, we declare the class Dog using the keyword class. We use the keyword def to define a function or method, such as the __init__ method. As we can see, the __init__ method initializes two attributes: breed and eyeColor. \n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "e818acae",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid character '−' (U+2212) (Temp/ipykernel_22340/3099585889.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"C:\\Users\\91854\\AppData\\Local\\Temp/ipykernel_22340/3099585889.py\"\u001b[1;36m, line \u001b[1;32m3\u001b[0m\n\u001b[1;33m    Ans: Instance − An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.\u001b[0m\n\u001b[1;37m                  ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid character '−' (U+2212)\n"
+     ]
+    }
+   ],
+   "source": [
+    "Q6. What is the process for creating a class instance?\n",
+    " \n",
+    "Ans: Instance − An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.\n",
+    "To create instances of a class, we call the class using class name and pass in whatever arguments its __init__ method accepts.\n",
+    "\"This would create first object of Employee class\"\n",
+    "emp1 = Employee(\"Zara\", 2000)\n",
+    "\"This would create second object of Employee class\"\n",
+    "emp2 = Employee(\"Manni\", 5000)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "c753199a",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (Temp/ipykernel_22340/2713755032.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"C:\\Users\\91854\\AppData\\Local\\Temp/ipykernel_22340/2713755032.py\"\u001b[1;36m, line \u001b[1;32m3\u001b[0m\n\u001b[1;33m    Ans: The class statement creates a new class definition. The name of the class immediately follows the keyword class followed by a colon as follows –\u001b[0m\n\u001b[1;37m             ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "Q7. What is the process for creating a class?\n",
+    "\n",
+    "Ans: The class statement creates a new class definition. The name of the class immediately follows the keyword class followed by a colon as follows –\n",
+    "class ClassName:\n",
+    "class Employee:\n",
+    "   'Common base class for all employees'\n",
+    "   empCount = 0\n",
+    "\n",
+    "   def __init__(self, name, salary):\n",
+    "      self.name = name\n",
+    "      self.salary = salary\n",
+    "      Employee.empCount += 1\n",
+    "   \n",
+    "   def displayCount(self)\n",
+    "     print \"Total Employee %d\" % Employee.empCount\n",
+    "\n",
+    "   def displayEmployee(self):\n",
+    "      print \"Name : \", self.name,  \", Salary: \", self.salary\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "aa64830d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Q8. How would you define the superclasses of a class?\n",
+    "\n",
+    "Ans: The class from which a class inherits is called the parent or superclass. A class which inherits from a superclass is called a subclass, also called heir class or child class. Superclasses are sometimes called ancestors as well.\n",
+    "The syntax for a subclass definition looks like this:\n",
+    "class DerivedClassName(BaseClassName):\n",
+    "    pass\n",
+    "Instead of the pass statement, there will be methods and attributes like in all other classes. The name BaseClassName must be defined in a scope containing the derived class definition.\n",
+    "Now we are ready for a simple inheritance example with Python code.\n",
+    "class Robot:\n",
+    "    def __init__(self, name):\n",
+    "        self.name = name\n",
+    "    def say_hi(self):\n",
+    "        print(\"Hi, I am \" + self.name)\n",
+    "class PhysicianRobot(Robot):\n",
+    "    pass\n",
+    "x = Robot(\"Marvin\")\n",
+    "y = PhysicianRobot(\"James\")\n",
+    "print(x, type(x))\n",
+    "print(y, type(y))\n",
+    "y.say_hi()\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
